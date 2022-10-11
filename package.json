@@ -1,0 +1,67 @@
+{
+  "name": "@huyennbl/capitalize-word",
+  "version": "1.0.0",
+  "description": "Capitalize matched word in a string",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huyennbl/capitalize-word.git"
+  },
+  "keywords": [
+    "capitalize-word",
+    "capitalize",
+    "word",
+    "words",
+    "capital",
+    "uppercase",
+    "pascalcase",
+    "Pascal"
+  ],
+  "bugs": {
+    "url": "https://github.com/huyennbl/capitalize-word/issues"
+  },
+  "homepage": "https://github.com/huyennbl/capitalize-word#readme",
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "author": "huyennbl",
+  "module": "dist/capitalize-word.esm.js",
+  "devDependencies": {
+    "@types/assert": "^1.5.6",
+    "@types/jest": "^29.1.2",
+    "@types/lodash.capitalize": "^4.2.7",
+    "assert": "^2.0.0",
+    "husky": "^8.0.1",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "lodash.capitalize": "^4.2.1"
+  }
+}
